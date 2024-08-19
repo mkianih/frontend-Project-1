@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battiston's Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-grey-bg">
+
+<!-- Navigation bar with social media icons -->
+<div class="navbar">
+    <a href="#" class="nav-item"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="nav-item"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="nav-item"><i class="fa fa-snapchat"></i></a>
+    <a href="#" class="nav-item"><i class="fa fa-flickr"></i></a>
+    <a href="#" class="nav-item"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="nav-item"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="nav-item nav-right"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- Page content -->
+<div class="content-wrapper">
+
+    <!-- Header -->
+    <header class="header center white-bg padding-large">
+        <h1 class="header-title"><b>BATTISTON'S STUDIO</b></h1>
+        <h6>Welcome to <span class="highlight">Battiston's world of photography</span></h6>
+    </header>
+
+    <!-- Image header -->
+    <header class="image-banner" id="home">
+        <img class="banner-image" src="images/studio_main.jpg" alt="Battiston's Studio">
+        <div class="banner-text">
+            <h1 class="banner-title">Battiston's</h1>
+            <h1 class="banner-subtitle"><b>PHOTOGRAPHY STUDIO</b></h1>
+            <h6><button class="button subscribe-button" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+        </div>
+    </header>
+
+    <!-- Main content layout -->
+    <div class="content-grid">
+
+        <!-- Main Blog Entries -->
+        <div class="main-content">
+            <!-- Blog entry 1 -->
+            <div class="blog-entry white-bg margin padding-large">
+                <div class="center">
+                    <h3>PHOTOGRAPHY TIPS</h3>
+                    <h5>Understanding Light, <span class="opacity">July 20, 2024</span></h5>
+                </div>
+
+                <div class="justify-text">
+                    <img src="images/lighting_tips.jpg" alt="Lighting Tips" class="full-width padding">
+                    <p><strong>Mastering Light!</strong> The key to great photography is understanding how to use light effectively. Here are some tips on lighting techniques to improve your photography.</p>
+                    <p>Experiment with natural and artificial light sources to create different effects. Pay attention to how light interacts with your subject, creating shadows and highlights that can add depth and interest to your photos.</p>
+                    <p class="left-align"><button class="button white-bg border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                    <p class="right-align"><button class="button black-bg" onclick="toggleReplies('demo1')" id="myBtn"><b>Replies  </b> <span class="highlight white-bg">1</span></button></p>
+                    <p class="clear"></p>
+                    <div class="reply-section margin-bottom" id="demo1" style="display:none">
+                        <hr>
+                        <div class="flex-row">
+                            <img src="images/avatar1.jpg" class="avatar">
+                            <div>
+                                <h4>George <span class="opacity medium-text">July 21, 2024, 6:32 PM</span></h4>
+                                <p>Great tips! Thanks for sharing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Blog entry 2 -->
+            <div class="blog-entry white-bg margin padding-large">
+                <div class="center">
+                    <h3>PORTRAIT PHOTOGRAPHY</h3>
+                    <h5>Capturing Emotions, <span class="opacity">June 30, 2024</span></h5>
+                </div>
+
+                <div class="justify-text">
+                    <img src="images/portrait_photography.jpg" alt="Portrait Photography" class="full-width padding">
+                    <p><strong>Focus on the Eyes!</strong> The eyes are the window to the soul. In portrait photography, capturing the subject's emotions can turn a good photo into a great one. Learn techniques to make your portraits stand out.</p>
+                    <p>Explore different angles, focal lengths, and lighting to bring out the best in your subjects. Connect with them to create authentic and powerful portraits.</p>
+                    <p class="left-align"><button class="button white-bg border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                    <p class="right-align"><button class="button black-bg" onclick="toggleReplies('demo2')"><b>Replies  </b> <span class="highlight white-bg">2</span></button></p>
+                    <p class="clear"></p>
+
+                    <div class="reply-section" id="demo2" style="display:none">
+                        <div class="flex-row">
+                            <img src="images/avatar2.jpg" class="avatar">
+                            <div>
+                                <h4>Amber <span class="opacity medium-text">July 1, 2024, 10:52 PM</span></h4>
+                                <p>Your portraits are stunning! Thanks for the tips.</p><br>
+                            </div>
+                        </div>
+                        <div class="flex-row margin-bottom">
+                            <img src="images/avatar3.jpg" class="avatar">
+                            <div>
+                                <h4>Angie <span class="opacity medium-text">June 30, 2024, 9:12 PM</span></h4>
+                                <p>Portraits are my favorite too!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog entry 3 -->
+            <div class="blog-entry white-bg margin padding-large">
+                <div class="center">
+                    <h3>EVENT PHOTOGRAPHY</h3>
+                    <h5>Catching the Moment, <span class="opacity">June 15, 2024</span></h5>
+                </div>
+
+                <div class="justify-text">
+                    <img src="images/event_photography.jpg" alt="Event Photography" class="full-width padding">
+                    <p><strong>Don't Miss the Action!</strong> Event photography is all about capturing the energy and emotion of the moment. Whether it's a wedding, concert, or corporate event, knowing when to click the shutter is key.</p>
+                    <p>Stay alert and ready to capture spontaneous moments that tell a story. Use a mix of wide shots and close-ups to give a full view of the event and the people involved.</p>
+                    <p class="left-align"><button class="button white-bg border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                    <p class="right-align"><button class="button black-bg" onclick="toggleReplies('demo3')"><b>Replies  </b> <span class="highlight white-bg">3</span></button></p>
+                    <p class="clear"></p>
+
+                    <div class="reply-section" id="demo3" style="display:none">
+                        <hr>
+                        <div class="flex-row margin-bottom">
+                            <img src="images/avatar4.jpg" class="avatar">
+                            <div>
+                                <h4>Jane <span class="opacity medium-text">June 16, 2024, 7:22 PM</span></h4>
+                                <p>The event photos are amazing! You captured everything perfectly.</p>
+                            </div>
+                        </div>
+                        <div class="flex-row margin-bottom">
+                            <img src="images/avatar5.jpg" class="avatar">
+                            <div>
+                                <h4>John <span class="opacity medium-text">June 15, 2024, 10:32 PM</span></h4>
+                                <p>Great work as always! I'm always impressed by your photos.</p>
+                            </div>
+                        </div>
+                        <div class="flex-row margin-bottom">
+                            <img src="images/avatar6.jpg" class="avatar">
+                            <div>
+                                <h4>Anja <span class="opacity medium-text">June 15, 2024, 9:12 PM</span></h4>
+                                <p>Can't wait to see the full album!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sidebar Content -->
+        <aside class="sidebar">
+
+            <!-- About Card -->
+            <div class="white-bg margin">
+                <img src="images/battiston_portrait.jpg" alt="Battiston" class="full-width grayscale">
+                <div class="container black-bg">
+                    <h4>About Battiston</h4>
+                    <p>I’m a passionate photographer based in [Your City]. Capturing moments and turning them into memories is what I live for. From portraits to events, my goal is to create timeless images that tell a story.</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Popular Posts -->
+            <div class="white-bg margin">
+                <div class="container padding black-bg">
+                    <h4>Popular Posts</h4>
+                </div>
+                <ul class="list white-bg">
+                    <li class="list-item">
+                        <img src="images/popular1.jpg" alt="Image" class="list-img">
+                        <div class="text-container">
+                            <span class="list-title">Portrait Techniques</span>
+                            <span class="list-text">Creating stunning portraits</span>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <img src="images/popular2.jpg" alt="Image" class="list-img">
+                        <div class="text-container">
+                            <span class="list-title">Event Highlights</span>
+                            <span class="list-text">Memorable moments</span>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <img src="images/popular3.jpg" alt="Image" class="list-img">
+                        <div class="text-container">
+                            <span class="list-title">Lighting Tips</span>
+                            <span class="list-text">Mastering photography lighting</span>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <img src="images/popular4.jpg" alt="Image" class="list-img">
+                        <div class="text-container">
+                            <span class="list-title">Studio Setup</span>
+                            <span class="list-text">Creating the perfect studio environment</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+            <!-- Advertising -->
+            <div class="white-bg margin">
+                <div class="container padding black-bg">
+                    <h4>Advertise</h4>
+                </div>
+                <div class="container white-bg">
+                    <div class="advertise-section" style="height:200px">
+                        <span class="advertise-text">Your AD Here</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Tags -->
+            <div class="white-bg margin">
+                <div class="container padding black-bg">
+                    <h4>Tags</h4>
+                </div>
+                <div class="container white-bg">
+                    <p>
+                        <span class="tag black-bg">Photography</span> 
+                        <span class="tag light-grey-bg">Portraits</span> 
+                        <span class="tag light-grey-bg">Events</span>
+                        <span class="tag light-grey-bg">Studio</span> 
+                        <span class="tag light-grey-bg">Lighting</span> 
+                        <span class="tag light-grey-bg">Workshops</span>
+                        <span class="tag light-grey-bg">Tips</span> 
+                        <span class="tag light-grey-bg">Inspiration</span> 
+                        <span class="tag light-grey-bg">Gear</span>
+                        <span class="tag light-grey-bg">Techniques</span> 
+                        <span class="tag light-grey-bg">Editing</span>
+                    </p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Follow Us -->
+            <div class="white-bg margin">
+                <div class="container padding black-bg">
+                    <h4>Follow Us</h4>
+                </div>
+                <div class="container xlarge padding">
+                    <i class="fa fa-facebook-official hover-opacity"></i>
+                    <i class="fa fa-instagram hover-opacity"></i>
+                    <i class="fa fa-snapchat hover-opacity"></i>
+                    <i class="fa fa-pinterest-p hover-opacity"></i>
+                    <i class="fa fa-twitter hover-opacity"></i>
+                    <i class="fa fa-linkedin hover-opacity"></i>
+                </div>
+            </div>
+            <hr>
+
+            <!-- Subscribe -->
+            <div class="white-bg margin">
+                <div class="container padding black-bg">
+                    <h4>Subscribe</h4>
+                </div>
+                <div class="container white-bg">
+                    <p>Enter your e-mail below and get notified on the latest updates from Battiston's Studio.</p>
+                    <p><input class="input border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+                    <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="button block red-bg">Subscribe</button></p>
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="modal animate-opacity">
+    <div class="modal-content padding-large">
+        <div class="container white-bg">
+            <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove transparent button large right"></i>
+            <h2 class="wide-text">SUBSCRIBE</h2>
+            <p>Join our mailing list to receive updates and tips on photography from Battiston's Studio.</p>
+            <p><input class="input border" type="text" placeholder="Enter e-mail"></p>
+            <button type="button" class="button block padding-large red-bg margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="container dark-grey-bg padding-large">
+    <a href="#" class="button black-bg padding-large margin-bottom"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+    <p>Powered by Battiston's Studio</p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function toggleReplies(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+
+function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>

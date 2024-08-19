@@ -1,0 +1,363 @@
+/* Custom Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f1f1f1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.light-grey-bg {
+    background-color: #f1f1f1;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.black-bg {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-grey-bg {
+    background-color: #333;
+    color: #fff;
+}
+
+.red-bg {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.padding {
+    padding: 16px;
+}
+
+.padding-large {
+    padding: 48px 16px;
+}
+
+.margin {
+    margin: 16px 0;
+}
+
+.margin-bottom {
+    margin-bottom: 16px;
+}
+
+.border {
+    border: 1px solid #ccc;
+}
+
+.full-width {
+    text-align: center; 
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.center {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.highlight {
+    background-color: #000;
+    color: #fff;
+    padding: 2px 4px;
+    display: inline-block;
+}
+
+.container {
+    padding: 16px;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    background-color: #555;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.header {
+    background-color: #fff;
+    padding: 48px 16px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.image-banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 32px;
+}
+
+.banner-title {
+    font-size: 3em;
+    color: white;
+}
+
+.banner-subtitle {
+    font-size: 2em;
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.block {
+    width: 100%;
+}
+
+.subscribe-button {
+    opacity: 0.6;
+}
+
+.subscribe-button:hover {
+    opacity: 1;
+}
+
+.opacity {
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+.medium-text {
+    font-size: 16px;
+}
+
+.xlarge {
+    font-size: 2em;
+}
+
+.hover-opacity:hover {
+    opacity: 0.7;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.main-content {
+    flex: 2;
+    margin-right: 16px;
+}
+
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sidebar .white-bg {
+    min-height: 250px; /* Increase the height of sidebar sections */
+}
+
+.inspiration-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.inspiration-column {
+    flex: 1;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 10px;
+    padding: 10px 0;  /* Adds padding between items */
+}
+
+.list-img {
+    width: 200px;
+    margin-right: 16px;
+    flex-shrink: 0;  /* Prevents the image from shrinking */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;  /* Adds consistent spacing between title and description */
+}
+
+.list-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list-text {
+    margin-top: 5px;  /* Adds space between title and description */
+    font-size: 16px;
+    color: #555;  /* Slightly lighter color for distinction */
+}
+
+.advertise-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+.advertise-text {
+    font-size: 20px;
+    color: #333;
+}
+
+.tag {
+    display: inline-block;
+    padding: 10px;
+    margin: 4px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.light-grey-bg {
+    background-color: #d3d3d3;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.reply-section {
+    display: none;
+    font-size: 16px;
+}
+
+.show {
+    display: block;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.wide-text {
+    font-size: 1.8em;
+}
+
+.avatar {
+    width: 90px;
+}
